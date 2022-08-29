@@ -1,14 +1,18 @@
-import { useState } from 'react'
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 import { Matrix } from './components/Matrix'
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+import {Container} from 'react-bootstrap'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <Matrix />
+      <Container>
+        <Matrix />
+      </Container>
+      
     </div>
   )
 }
